@@ -37,7 +37,10 @@ export default async function ProjectRoom({ params }: PageProps<"/projects/[id]"
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
       <Live projectId={projectId} />
-      <Link href="/" className="text-sm text-muted hover:text-neon">← Projects</Link>
+      <div className="flex items-center justify-between gap-3">
+        <Link href="/" className="text-sm text-muted hover:text-neon">← Projects</Link>
+        <a href="#chat" className="btn lg:hidden">Jump to chat</a>
+      </div>
 
       <header className="mt-3">
         <div className="flex flex-wrap items-center gap-3">
@@ -185,7 +188,7 @@ export default async function ProjectRoom({ params }: PageProps<"/projects/[id]"
           </section>
         </div>
 
-        <section className="card h-fit p-4 lg:sticky lg:top-4">
+        <section id="chat" className="card h-fit scroll-mt-4 p-4 lg:sticky lg:top-4">
           <h2 className="font-mono text-sm text-neon">Live chat</h2>
           <div className="mt-3">
             <ChatLog count={chat.length}>

@@ -23,3 +23,11 @@ updated: 2026-11-20T21:17
 - Non-owner replay of owner's add-member request refused; owner replay works (control): passed.
 - Live chat in a second tab: passed.
 - Not tested: phone width, many users, long messages.
+
+## 0.1.1
+
+- Phone width check (375px): no horizontal overflow on Projects, Candidates, Discord sim or the project room.
+- Buttons, inputs and the progress slider are at least 44px tall on small screens.
+- Project room: Jump to chat link on small screens (the chat sits at the bottom of the page there).
+- Demo data switched to abliteration topics; default verify emoji changed to a pin; titles cut at word boundaries.
+- Not tested: real phone hardware, landscape, very long messages.

@@ -1,5 +1,9 @@
 # What's new
 
+## 0.1.1
+
+- Works better on phones: larger buttons and a Jump to chat link in project rooms.
+
 ## 0.1.0
 
 First prototype of Black Notes, a project board for a Discord community.

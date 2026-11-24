@@ -34,7 +34,7 @@ How we know: **tested** = seen working or failing in the browser, **code** = fou
 | Item | How we know | Fix idea |
 | --- | --- | --- |
 | Progress changes are logged as build notes, which can clutter the list | tested | Separate "updates" tab |
-| Mobile layout only checked at desktop width | untested | Check at phone width |
+| Mobile layout only checked at desktop width | tested | **Fixed in 0.1.1:** checked at 375px wide, no sideways overflow; tap targets raised to 44px and a Jump to chat link added |
 | Chat refresh re-renders the whole page on each message | code | Stream only new messages |
 | Messages are shown in Discord-simulated time (UTC) | code | Format in the viewer's timezone |
 
